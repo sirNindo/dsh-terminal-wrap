@@ -1,0 +1,6 @@
+# Insert the host stub so the Loader activates this package. There is no client
+# half: the CSS ships as a structured `style` index-injection row contributed
+# from lib/index.js, which lands in index.html on every server response.
+- insert:
+    - id: terminal-wrap
+      name: 'dsh-terminal-wrap'

@@ -1,0 +1,48 @@
+{
+  "name": "dsh-terminal-wrap",
+  "version": "0.2.0",
+  "description": "DSH web UI: show shell commands in full — wrap long commands, cap the banner at 5 lines, and syntax-highlight the command.",
+  "type": "module",
+  "main": "lib/index.js",
+  "author": "sirNindo",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sirNindo/dsh-terminal-wrap.git"
+  },
+  "homepage": "https://github.com/sirNindo/dsh-terminal-wrap#readme",
+  "bugs": {
+    "url": "https://github.com/sirNindo/dsh-terminal-wrap/issues"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": {
+      "default": "./lib/client.js"
+    },
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web"
+    }
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "test"
+  ],
+  "keywords": [
+    "deepseek",
+    "harness",
+    "dsh",
+    "dsh-plugin",
+    "terminal",
+    "shell"
+  ],
+  "license": "MIT"
+}
